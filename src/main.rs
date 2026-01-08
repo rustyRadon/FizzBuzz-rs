@@ -8,7 +8,7 @@ fn main() -> io::Result<()> {
     let mut handle = stdout.lock();
     
     // i pre-allocated a String buffer with initial capacity (4000 gotta be enough)
-    let mut output = String::with_capacity(4000); // Pre-allocated memory
+    let mut output = String::with_capacity(3100); // Pre-allocated memory
     
     for n in 1..=100 {
         match (n % 3 == 0, n % 5 == 0) {
