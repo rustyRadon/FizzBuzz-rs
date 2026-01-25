@@ -22,7 +22,7 @@ fn main() -> io::Result<()> {
         }
     }
     
-    // write the entire accumulated output in one call. faster than multiple writes yk..
+    // writes the entire accumulated output in one call. faster than multiple writes yk..
     handle.write_all(output.as_bytes())?;
     
     Ok(())
